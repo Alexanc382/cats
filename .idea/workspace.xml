@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd73eb09-77cc-433d-8cb5-b9e4c758301b" name="Changes" comment="доработали окно и кнопку ввода тега">
-      <change afterPath="$PROJECT_DIR$/Cataas_3.py" afterDir="false" />
+    <list default="true" id="dd73eb09-77cc-433d-8cb5-b9e4c758301b" name="Changes" comment="добавили combobox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cataas_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cataas_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cataas_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cataas_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753703666506</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="добавили combobox">
+      <option name="closed" value="true" />
+      <created>1753704923407</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753704923407</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +188,7 @@
     <MESSAGE value="добавили функцию 'выход' в меню" />
     <MESSAGE value="добавили окно ввода тега и кнопку" />
     <MESSAGE value="доработали окно и кнопку ввода тега" />
-    <option name="LAST_COMMIT_MESSAGE" value="доработали окно и кнопку ввода тега" />
+    <MESSAGE value="добавили combobox" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили combobox" />
   </component>
 </project>
