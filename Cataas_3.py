@@ -27,7 +27,6 @@ def load_image(url_my):
 
 def open_new_window():
     tag = tag_combobox.get() # получаем из выпад.списка
-    # tag = tag_entry.get() # получаем то, что пользователь ввел в поле ввода tag_entry
     url_with_tag = f'https://cataas.com/cat/{tag}' if tag else 'https://cataas.com/cat'
     img = load_image(url_with_tag)
     # img = load_image(url_my)  # функция в которую будет отправляться переменная url_my
@@ -51,7 +50,6 @@ window.title('Cats!')
 window.geometry('800x600')
 
 
-
 menu_bar = Menu(window)
 window.config(menu=menu_bar)
 
@@ -64,12 +62,9 @@ file_menu.add_command(label='Выход', command=exit_file)
 tag_label = Label(text='Выбери тег')
 tag_label.pack()
 
-tag_combobox = ttk.Combobox(values=Allowed_tags)
+tag_combobox = ttk.Combobox(values=Allowed_tags).grid(row=0, column=0)
 tag_combobox.pack()
-tag_entry = Entry()
-tag_entry.pack()
-
-load_button = Button(text='Загрузить по тегу', command=open_new_window)
+load_button = Button(text='Загрузить по тегу', command=open_new_window).grid(row=1, column=0)
 load_button.pack()
 
 

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd73eb09-77cc-433d-8cb5-b9e4c758301b" name="Changes" comment="добавили окно ввода тега и кнопку">
+    <list default="true" id="dd73eb09-77cc-433d-8cb5-b9e4c758301b" name="Changes" comment="доработали окно и кнопку ввода тега">
+      <change afterPath="$PROJECT_DIR$/Cataas_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cataas_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cataas_2.py" afterDir="false" />
     </list>
@@ -48,6 +49,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Cataas.executor": "Run",
     "Python.Cataas_2.executor": "Run",
+    "Python.Cataas_3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -147,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753702830335</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="доработали окно и кнопку ввода тега">
+      <option name="closed" value="true" />
+      <created>1753703666506</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753703666506</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +180,7 @@
     <MESSAGE value="добавили меню вместо кнопки" />
     <MESSAGE value="добавили функцию 'выход' в меню" />
     <MESSAGE value="добавили окно ввода тега и кнопку" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили окно ввода тега и кнопку" />
+    <MESSAGE value="доработали окно и кнопку ввода тега" />
+    <option name="LAST_COMMIT_MESSAGE" value="доработали окно и кнопку ввода тега" />
   </component>
 </project>
