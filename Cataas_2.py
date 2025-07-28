@@ -24,10 +24,11 @@ def load_image(url_my):
 
 
 def open_new_window():
-    tag = tag_entry.get()
-
-    img = load_image(url_my)  # функция в которую будет отправляться переменная url_my
-    # и эта функция вернет картинку в переменную img
+    tag = tag_entry.get() # получаем то, что пользователь ввел в поле ввода tag_entry
+    url_with_tag = f'https://cataas.com/cat/{tag}' if tag else 'https://cataas.com/cat'
+    img = load_image(url_with_tag)
+    # img = load_image(url_my)  # функция в которую будет отправляться переменная url_my
+    # # и эта функция вернет картинку в переменную img
     if url_my:  # если переменная не пустая
         new_window = Toplevel()
         new_window.title('Картинка с котиком')
