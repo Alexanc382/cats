@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd73eb09-77cc-433d-8cb5-b9e4c758301b" name="Changes" comment="добавили кнопку для загрузки нового изображения">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cataas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cataas.py" afterDir="false" />
+    <list default="true" id="dd73eb09-77cc-433d-8cb5-b9e4c758301b" name="Changes" comment="добавили параметры для изображения">
+      <change afterPath="$PROJECT_DIR$/Cataas_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +49,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/gra4e/PycharmProjects/PythonProject/Cats",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gra4e\PycharmProjects\PythonProject\Cats" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -108,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753686693181</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="добавили параметры для изображения">
+      <option name="closed" value="true" />
+      <created>1753700649256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753700649256</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +140,7 @@
     <MESSAGE value="созданы окно и виджеты" />
     <MESSAGE value="создана функция для получения изображения с пушистиком" />
     <MESSAGE value="добавили кнопку для загрузки нового изображения" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили кнопку для загрузки нового изображения" />
+    <MESSAGE value="добавили параметры для изображения" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавили параметры для изображения" />
   </component>
 </project>
