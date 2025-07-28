@@ -23,12 +23,18 @@ def load_image(url_my):
         return None
 
 
-def set_image():
-    img = load_image(url)  # функция в которую будет отправляться переменная url
+def open_new_window():
+    tag = tag_entry.get()
+
+    img = load_image(url_my)  # функция в которую будет отправляться переменная url_my
     # и эта функция вернет картинку в переменную img
-    if img:  # если переменная не пустая
-        label.config(image=img)
-        label.image = img  # команда, чтобы 'сборщик мусора' Пайтона уберет эту картинку
+    if url_my:  # если переменная не пустая
+        new_window = Toplevel()
+        new_window.title('Картинка с котиком')
+        new_window.geometry('600x480')
+        label = Label(new_window, image=img)
+        label.pack()
+        label.image = img
 
 
 def exit_file():
@@ -40,24 +46,26 @@ window = Tk()
 window.title('Cats!')
 window.geometry('800x600')
 
-label = Label()
-label.pack()
+
 
 menu_bar = Menu(window)
 window.config(menu=menu_bar)
 
 file_menu = Menu(menu_bar, tearoff=0)
 menu_bar.add_cascade(label='Файл', menu=file_menu)
-file_menu.add_command(label='Загрузить фото', command=set_image)
+file_menu.add_command(label='Загрузить фото', command=open_new_window)
 file_menu.add_separator()
 file_menu.add_command(label='Выход', command=exit_file)
 
+tag_entry = Entry()
+tag_entry.pack()
 
-url = 'https://cataas.com/cat'
+load_button = Button(text="Загрузить по тегу", command=open_new_window)
+load_button.pack()
 
 
+url_my = 'https://cataas.com/cat'
 
 
-set_image()
 
 window.mainloop()
