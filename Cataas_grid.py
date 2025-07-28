@@ -53,29 +53,14 @@ def open_random_cat():
         label.image = img
 
 
-
 def exit_file():
     window.destroy()
-
 
 
 window = Tk()
 window.title('Cats!')
 window.geometry('800x600')
 
-# frame1 = Frame(window) # бокс
-# frame2 = Frame(window) # метка
-# frame3 = Frame(window) # кнопка "загрузить"
-# frame4 = Frame(window) # кнопка "случайный котик"
-# frame1.pack()
-# frame2.pack()
-# frame3.pack()
-# frame4.pack()
-
-# frame1 = Frame(window) # бокс, метка, кнопка "загрузить"
-# frame2 = Frame(window) # кнопка "случайный котик"
-# frame1.pack()
-# frame2.pack()
 
 menu_bar = Menu(window)
 window.config(menu=menu_bar)
@@ -87,30 +72,19 @@ file_menu.add_separator()
 file_menu.add_command(label='Выход', command=exit_file)
 
 
-frame1 = Frame(window)
-frame1.pack()
-frame2 = Frame(window)
-frame2.pack()
-frame2 = Frame(window)
-frame2.pack()
-
-tag_label = Label(frame1, text='Выбери тег', justify="left")
-tag_label.pack()
+tag_label = Label(window, text='Выбери тег')
+tag_label.grid(row=0, column=1)
 
 
-tag_combobox = ttk.Combobox(frame1, values=Allowed_tags, justify="left", width=20)
-tag_combobox.pack(side=LEFT, padx=(0, 10))
-load_button = ttk.Button(frame2, text='Загрузить по тегу', command=open_new_window)
-load_button.pack(side=LEFT)
+tag_combobox = ttk.Combobox( values=Allowed_tags, width=20)
+tag_combobox.grid(row=1, column=1)
 
-random_button = ttk.Button(frame1, text='Случайный котик', command=open_random_cat)
-random_button.pack(side=RIGHT)
+load_button = ttk.Button(text='Загрузить по тегу', command=open_new_window)
+load_button.grid(row=2, column=1)
 
-
+random_button = ttk.Button( text='Случайный котик', command=open_random_cat)
+random_button.grid(row=1, column=2)
 
 url_my = 'https://cataas.com/cat'
-
-
-
 
 window.mainloop()
