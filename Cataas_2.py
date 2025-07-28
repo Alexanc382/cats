@@ -7,12 +7,12 @@ from io import BytesIO
 
 
 
-#input/out вход/выход информации.
+#input/out ввод/вывод информации.
 # Байт потому что картинки по запросу вернуться в виде байтов
 
-def load_image(url):
+def load_image(url_my):
     try:
-        response = requests.get(url)
+        response = requests.get(url_my)
         response.raise_for_status()
         image_data = BytesIO(response.content)
         img = Image.open(image_data)
@@ -31,7 +31,7 @@ def set_image():
         label.image = img  # команда, чтобы 'сборщик мусора' Пайтона уберет эту картинку
 
 
-def exit():
+def exit_file():
     window.destroy()
 
 
@@ -50,7 +50,7 @@ file_menu = Menu(menu_bar, tearoff=0)
 menu_bar.add_cascade(label='Файл', menu=file_menu)
 file_menu.add_command(label='Загрузить фото', command=set_image)
 file_menu.add_separator()
-file_menu.add_command(label='Выход', command=exit)
+file_menu.add_command(label='Выход', command=exit_file)
 
 
 url = 'https://cataas.com/cat'
